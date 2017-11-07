@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Nov 06 16:55:58 CST 2017
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=mybatis-generator-core-1.3.5.jar
+manifest.mergeall=true
+manifest.mainclass=org.mybatis.generator.api.ShellRunner
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|generator>~ant-1.10.1.jar;<po|generator>~log4j-1.2.17.jar;<po|generator>~mysql-connector-java-5.1.17-bin.jar;<po|generator>~ojdbc-14-10.2.0.4.0.jar;<jar|ant-1.10.1.jar>;<jar|log4j-1.2.17.jar>
+includes=
