@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generators  batisVersion = "MyBatis3" >
+
+	<project:base>
+		<!-- 生成代码存放路径 -->
+		<property name="targetPath"  value="./result"/>
+		<!-- 工程的顶层包名 -->
+		<property name="rootPackage" value="com.uddtrip.corporatetravel"/>
+		<property name="boPackage" value="${rootPackage}.${modulename}.model"/>
+		<property name="mapperPackage" value="${rootPackage}.${modulename}.dao.mapper"/>
+		<property name="daoPackage" value="${rootPackage}.${modulename}.dao"/>
+		<property name="daoImplPackage" value="${rootPackage}.${modulename}.dao.impl"/>
+		<property name="servicePackage" value="${rootPackage}.${modulename}.service"/>
+		<property name="serviceImplPackage" value="${rootPackage}.${modulename}.service.impl"/>
+		<property name="controllerPackage" value="${rootPackage}.${modulename}.web.controller"/>
+		<property name="validatorPackage" value="${rootPackage}.${modulename}.web.validator"/>
+		
+		<!-- 修改表格字段时候：<property name="generators" 	value="bo-base,mapperxml-base"></property> -->
+		<!-- 新建表格的时候：     <property name="generators" 	value="bo,bo-base,mapper,mapperxml,mapperxml-base,dao,dao-ipml,service,service-impl,controller,form,validator"></property> -->
+		<!-- <property name="generators" 	value="bo,bo-base"></property>  -->
+		<!--  <property name="generators" 	value="bo-base,mapperxml-base"></property>--> 
+	</project:base>
+	
+	<project:driver>
+		<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+		<property name="connectionURL" value="jdbc:mysql://192.168.1.93:3306/udd_corporate_travel"></property>
+		<property name="username" value="root_test"></property>
+		<property name="password" value="java@123test"></property>
+	</project:driver>
+	
+	<project:table>
+		<!-- 表名 -->
+		<property name="tablename"  value="tct_distribution_information"></property>
+		<!-- 模块名称，生成java代码包路径的时候需要替换，不能大写 -->
+		<property name="modulename" value="admin"></property>
+		<!-- 模型的BO名称，生成java代码BO名称，不填写的时候是表名驼峰规则转化而来 -->
+		<property name="boname" 	value="DistributionInformation"></property>
+	</project:table>
+	
+	
+	
+
+
+
+</generators>
